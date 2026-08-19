@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Advanced Communication & Intelligent Systems Research — research in 6G, RIS, optical wireless, AI, IoT, satellite communications and signal processing." />
+  <meta name="theme-color" content="#07111f" />
+  <title>ACIS Research | Advanced Communication & Intelligent Systems</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" id="progressBar" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="ACIS Research home">
+      <span class="brand-mark" aria-hidden="true">
+        <span class="ring ring-a"></span><span class="ring ring-b"></span><span class="dot"></span>
+      </span>
+      <span>
+        <strong>ACIS</strong>
+        <small>Research Group</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#research">Research</a>
+      <a href="#members">Members</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle theme">
+      <span class="sun">☀</span><span class="moon">◐</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <canvas id="networkCanvas" aria-hidden="true"></canvas>
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+
+      <div class="hero-content reveal">
+        <span class="eyebrow"><span class="pulse"></span> Research • Innovation • Reproducibility</span>
+        <h1>Advanced Communication<br><span>& Intelligent Systems</span></h1>
+        <p class="hero-copy">
+          Research at the intersection of next-generation wireless and optical communications,
+          artificial intelligence, IoT, satellite systems, signal processing and engineering optimization.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#research">Explore Research <span>↗</span></a>
+          <a class="btn btn-ghost" href="#members">Meet the Team</a>
+        </div>
+        <div class="hero-tags" aria-label="Core research topics">
+          <span>6G & RIS</span><span>Optical Wireless</span><span>AI/ML</span><span>IoT</span><span>LEO Satellites</span>
+        </div>
+      </div>
+
+      <aside class="hero-orbit reveal delay-1" aria-label="Research ecosystem visualization">
+        <div class="orbit-core"><strong>ACIS</strong><small>RESEARCH</small></div>
+        <div class="orbit orbit-1"><span class="satellite s1">6G</span><span class="satellite s2">AI</span></div>
+        <div class="orbit orbit-2"><span class="satellite s3">FSO</span><span class="satellite s4">IoT</span></div>
+        <div class="orbit orbit-3"><span class="satellite s5">RIS</span><span class="satellite s6">LEO</span></div>
+      </aside>
+
+      <a class="scroll-cue" href="#research" aria-label="Scroll to research"><span></span>Scroll</a>
+    </section>
+
+    <section class="stats-strip" aria-label="Research statistics">
+      <div class="stat"><strong data-count="8">0</strong><span>Research Domains</span></div>
+      <div class="stat"><strong data-count="2">0</strong><span>Core Members</span></div>
+      <div class="stat"><strong data-count="12">0</strong><span>Active Directions</span></div>
+      <div class="stat"><strong data-count="100">0</strong><span>% Research Focus</span></div>
+    </section>
+
+    <section class="section research-section" id="research">
+      <div class="section-heading reveal">
+        <span class="kicker">01 / Research</span>
+        <h2>Research <span>Domains</span></h2>
+        <p>Interdisciplinary research spanning communication theory, intelligent algorithms, practical channel modeling and reproducible engineering.</p>
+      </div>
+
+      <div class="research-filter reveal" role="group" aria-label="Filter research areas">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="wireless">Wireless</button>
+        <button class="filter-btn" data-filter="optical">Optical</button>
+        <button class="filter-btn" data-filter="ai">AI & Data</button>
+        <button class="filter-btn" data-filter="systems">Systems</button>
+      </div>
+
+      <div class="research-grid" id="researchGrid">
+        <article class="research-card reveal" data-category="wireless">
+          <div class="card-index">01</div><div class="icon">◈</div>
+          <h3>RIS-Assisted 5G/6G</h3>
+          <p>Wideband RIS/IRS, active and STAR-RIS, quantized phase control, imperfect CSI, dynamic blockage and real-time optimization.</p>
+          <div class="chips"><span>RIS</span><span>OFDM</span><span>mmWave/THz</span></div>
+        </article>
+
+        <article class="research-card reveal delay-1" data-category="optical">
+          <div class="card-index">02</div><div class="icon">✦</div>
+          <h3>FSO & Optical Wireless</h3>
+          <p>Free-space optical and hybrid FSO/RF links under turbulence, dust, fog, pointing errors and adaptive link control.</p>
+          <div class="chips"><span>FSO</span><span>Hybrid RF</span><span>Channel Modeling</span></div>
+        </article>
+
+        <article class="research-card reveal delay-2" data-category="optical">
+          <div class="card-index">03</div><div class="icon">⌁</div>
+          <h3>Visible Light Communications</h3>
+          <p>Adaptive optical OFDM, DCO/ACO/Flip-OFDM, transform precoding, nonlinear LED modeling and mobility-aware VLC.</p>
+          <div class="chips"><span>VLC</span><span>O-OFDM</span><span>Precoding</span></div>
+        </article>
+
+        <article class="research-card reveal" data-category="ai">
+          <div class="card-index">04</div><div class="icon">◎</div>
+          <h3>AI & Machine Learning</h3>
+          <p>Physics-informed learning, deep learning, federated learning, trustworthy ML, classification and intelligent control.</p>
+          <div class="chips"><span>Deep Learning</span><span>Federated AI</span><span>ML</span></div>
+        </article>
+
+        <article class="research-card reveal delay-1" data-category="systems">
+          <div class="card-index">05</div><div class="icon">⌖</div>
+          <h3>IoT Localization & Sensing</h3>
+          <p>Passive and batteryless IoT localization, cooperative readers, synchronization uncertainty and ambient-IoT sensing.</p>
+          <div class="chips"><span>Localization</span><span>Ambient IoT</span><span>Sensing</span></div>
+        </article>
+
+        <article class="research-card reveal delay-2" data-category="wireless systems">
+          <div class="card-index">06</div><div class="icon">◒</div>
+          <h3>Satellite & Non-Terrestrial Networks</h3>
+          <p>LEO direct-to-device links, satellite optical communications, UAV/HAPS connectivity and high-mobility channels.</p>
+          <div class="chips"><span>LEO</span><span>NTN</span><span>UAV/HAPS</span></div>
+        </article>
+
+        <article class="research-card reveal" data-category="wireless systems">
+          <div class="card-index">07</div><div class="icon">≈</div>
+          <h3>Advanced Waveforms & SDR</h3>
+          <p>OTFS, AFDM and OFDM for high-mobility systems, software-defined radio, channel estimation and impairment-aware design.</p>
+          <div class="chips"><span>OTFS</span><span>AFDM</span><span>SDR</span></div>
+        </article>
+
+        <article class="research-card reveal delay-1" data-category="ai systems">
+          <div class="card-index">08</div><div class="icon">◇</div>
+          <h3>Optimization & Intelligent Engineering</h3>
+          <p>Metaheuristics, multi-objective optimization, resource allocation, power systems optimization and reproducible simulation.</p>
+          <div class="chips"><span>Optimization</span><span>Multi-objective</span><span>Simulation</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section members-section" id="members">
+      <div class="section-heading reveal">
+        <span class="kicker">02 / People</span>
+        <h2>Research <span>Team</span></h2>
+        <p>A compact interdisciplinary team focused on communication systems, intelligent algorithms and applied engineering research.</p>
+      </div>
+
+      <div class="members-grid">
+        <article class="member-card reveal">
+          <div class="member-photo avatar ayad" role="img" aria-label="Placeholder avatar for Dr. Ayad M. Dalloo">
+            <span>AD</span><div class="scan"></div>
+          </div>
+          <div class="member-info">
+            <span class="member-role">Research Lead</span>
+            <h3>Dr. Ayad M. Dalloo</h3>
+            <p>Wireless and optical communications, intelligent systems, IoT, signal processing and research-oriented engineering simulation.</p>
+            <div class="expertise"><span>6G/RIS</span><span>FSO/VLC</span><span>AI/ML</span><span>IoT</span></div>
+            <div class="member-links">
+              <a href="#publications">Research</a><a href="#contact">Contact</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="member-card reveal delay-1">
+          <div class="member-photo avatar sulaf" role="img" aria-label="Placeholder avatar for Sulaf Waiss">
+            <span>SW</span><div class="scan"></div>
+          </div>
+          <div class="member-info">
+            <span class="member-role">Research Member</span>
+            <h3>Sulaf Waiss</h3>
+            <p>Research member profile ready for your verified academic title, specialization, biography, ORCID and publication links.</p>
+            <div class="expertise"><span>Research</span><span>Communications</span><span>Intelligent Systems</span></div>
+            <div class="member-links">
+              <a href="#projects">Projects</a><a href="#contact">Contact</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="edit-note reveal">Member titles, biographies, photos, emails, Google Scholar and ORCID links are intentionally easy to replace in <code>index.html</code>.</p>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading reveal">
+        <span class="kicker">03 / Current Work</span>
+        <h2>Featured <span>Research Directions</span></h2>
+      </div>
+
+      <div class="project-list">
+        <article class="project reveal">
+          <div class="project-number">01</div>
+          <div class="project-main"><span class="status"><i></i> Active</span><h3>Real-Time Wideband RIS-Assisted OFDM</h3><p>Latency-aware RIS control under imperfect CSI, hardware nonidealities, channel aging and dynamic blockage.</p></div>
+          <div class="project-tech"><span>RIS</span><span>OFDM</span><span>6G</span></div>
+          <span class="project-arrow">↗</span>
+        </article>
+        <article class="project reveal">
+          <div class="project-number">02</div>
+          <div class="project-main"><span class="status"><i></i> Active</span><h3>Physics-Informed FSO for Dust-Prone Environments</h3><p>SWIR/MWIR channel modeling and machine-learning-based adaptation for severe atmospheric conditions.</p></div>
+          <div class="project-tech"><span>FSO</span><span>ML</span><span>Atmosphere</span></div>
+          <span class="project-arrow">↗</span>
+        </article>
+        <article class="project reveal">
+          <div class="project-number">03</div>
+          <div class="project-main"><span class="status"><i></i> Active</span><h3>Trustworthy IoT Intelligence</h3><p>Localization, security, federated learning, tabular clinical ML and resource-aware intelligent decision systems.</p></div>
+          <div class="project-tech"><span>IoT</span><span>AI</span><span>Trust</span></div>
+          <span class="project-arrow">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section publications-section" id="publications">
+      <div class="section-heading reveal">
+        <span class="kicker">04 / Publications</span>
+        <h2>Selected <span>Research Output</span></h2>
+        <p>The sample entries below are marked as research directions/manuscripts rather than falsely presented as published papers. Replace them with verified bibliographic records.</p>
+      </div>
+
+      <div class="pub-toolbar reveal">
+        <label class="search-box">
+          <span>⌕</span>
+          <input id="pubSearch" type="search" placeholder="Search title, topic or year..." autocomplete="off" />
+        </label>
+        <select id="pubFilter" aria-label="Filter publication category">
+          <option value="all">All fields</option>
+          <option value="wireless">Wireless & 6G</option>
+          <option value="optical">Optical</option>
+          <option value="iot">IoT & AI</option>
+        </select>
+      </div>
+
+      <div class="publication-list" id="publicationList">
+        <article class="publication reveal" data-field="wireless" data-search="wideband ris ofdm 6g latency imperfect csi 2026">
+          <span class="pub-year">2026</span><div><span class="pub-type">Research manuscript</span><h3>Deployment-Latency-Aware Wideband RIS–OFDM Control under Practical Channel and Hardware Impairments</h3><p>RIS • OFDM • Real-time control • Quantized hardware</p></div><span class="pub-link">↗</span>
+        </article>
+        <article class="publication reveal" data-field="optical" data-search="visible light communication optical ofdm adaptive transform precoding 2026">
+          <span class="pub-year">2026</span><div><span class="pub-type">Research manuscript</span><h3>Pilot-Verified Reliability-Constrained Adaptive Optical OFDM with Transform Precoding under Nonlinear LED and Dynamic VLC Channels</h3><p>VLC • O-OFDM • Adaptive modulation • Precoding</p></div><span class="pub-link">↗</span>
+        </article>
+        <article class="publication reveal" data-field="optical" data-search="fso swir mwir dust machine learning 2026">
+          <span class="pub-year">2026</span><div><span class="pub-type">Research direction</span><h3>Physics-Informed SWIR–MWIR Free-Space Optical Communications for Dust-Prone Environments</h3><p>FSO • Atmospheric channels • Physics-informed ML</p></div><span class="pub-link">↗</span>
+        </article>
+        <article class="publication reveal" data-field="iot" data-search="cooperative localization passive batteryless iot synchronization 6g 2026">
+          <span class="pub-year">2026</span><div><span class="pub-type">Review direction</span><h3>Cooperative Localization of Passive and Batteryless IoT Devices: Synchronization Challenges, Methods, Standards, and Future Directions</h3><p>Ambient IoT • Localization • Synchronization • 6G</p></div><span class="pub-link">↗</span>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState">No matching research output found.</p>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-panel reveal">
+        <div>
+          <span class="kicker">05 / Collaboration</span>
+          <h2>Build the next<br><span>research direction.</span></h2>
+          <p>For research collaboration, student projects, reproducible simulation studies and interdisciplinary communication-system research.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:YOUR_EMAIL@example.com">Contact the Group <span>↗</span></a>
+          <p>Replace the placeholder email before publishing.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>ACIS Research Group</strong><p>Advanced Communication & Intelligent Systems</p></div>
+    <div class="footer-links"><a href="#research">Research</a><a href="#members">Members</a><a href="#publications">Publications</a></div>
+    <p>© <span id="year"></span> ACIS Research. Academic research website.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
